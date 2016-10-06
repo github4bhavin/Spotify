@@ -6,8 +6,10 @@
 # install virtualenv if you dont have one.. ( only if you want to keept everthing seperate)
 pip install virtualenv
 
+git clone https://github.com/github4bhavin/Spotify.git
+
 # chagne to root of the project
-cp ../Spotify
+cp Spotify
 
 # create virtual env for the project
 virtualenv venv

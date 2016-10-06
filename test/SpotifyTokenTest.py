@@ -5,8 +5,8 @@ import spotipy.util as util
 
 # set env vars
 
-os.environ['SPOTIPY_CLIENT_ID'    ] = '445ce73bb6bd4f3d8e1426a875b104bf'
-os.environ['SPOTIPY_CLIENT_SECRET'] = '92ecb83106094c08bffbbcfd65850bc6'
+os.environ['SPOTIPY_CLIENT_ID'    ] = ''
+os.environ['SPOTIPY_CLIENT_SECRET'] = ''
 os.environ['SPOTIPY_REDIRECT_URI' ] = 'http://localhost:8888/oauth'
 
 _DEFAULT_USERNAME = 'sportify4bhavin'

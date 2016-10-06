@@ -8,8 +8,8 @@ from Spotify.lib.MessageProcessor import  MessageProcessor
 
 config = dict(
     SP_USERNAME = 'spotify4bhavin',
-    SP_CLIENT_ID = '445ce73bb6bd4f3d8e1426a875b104bf',
-    SP_CLIENT_SECRET = '92ecb83106094c08bffbbcfd65850bc6',
+    SP_CLIENT_ID = '',
+    SP_CLIENT_SECRET = '',
     SP_REDIRECT_URI= 'http://localhost:8888/oauth'
 )
 

@@ -1,0 +1,26 @@
+{% extends "default.html" %}
+{% block title %} SpotiRUN | Welcome {% endblock %}
+
+
+{% block content %}
+<div >
+    <div class="page-header">
+        <h1>Welcome to SportiRUN!</h1>
+        <span>
+            <h1><small>tell me whats on your mind and I will build a playlist for you...</small></h1>
+        </span>
+    </span>
+    <div id="search-message">
+        <form method="post" action="{{ url_for('playlist') }}">
+
+            <div class="input-group input-group-lg">
+                <span class="input-group-addon" id="sentence-label" for="seach-message">Whats on your mind!</span>
+                <textarea class="form-control" aria-describedby="sentence-label" name="search-message">if i can't let it go out of my mind</textarea>
+            </div>
+
+            <input class="btn btn-primary" id="search-button" name="" value="Get My Playlist" type="submit"/>
+
+        </form>
+    </div>
+</div>
+{% endblock %}

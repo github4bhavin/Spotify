@@ -1,0 +1,7 @@
+*.pyc
+venv
+venv/*
+
+.idea
+
+test/.cache-*

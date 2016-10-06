@@ -1,0 +1,40 @@
+{% extends "default.html" %}
+{% block title %} Playlist... {% endblock %}
+
+
+{% block content %}
+<div >
+    <h2><small>Playlist successfully created!</small></h2>
+    <div class="container-fluid">
+        <a href="/" class="btn btn-primary">Home</a>
+        <ul class="media-list">
+            {% for song in playlist %}
+            <div class="row">
+                <div class="col-lg-6">
+                    <iframe frameborder="no" border="0" scrolling="yes"
+                            height="300px" width="500px" src="{{ song['extern_url'] }}"></iframe>
+                </div>
+                <div class="col-lg-6">
+                    <table>
+                        <tr>
+                            <td><h2><bold>Song</bold></h2></td>
+                            <td><h2><small><a href="{{ song['external_url'] }}">{{ song['name'] }}</a> </small></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h2><bold>Artist</bold></h2></td>
+                            <td><h2><small>{{ song['artist'] }}</small></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h2><bold>Album</bold></h2></td>
+                            <td><h2><small>{{ song['album'] }}</small></h2></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+
+{% endblock %}

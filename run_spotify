@@ -1,0 +1,7 @@
+
+
+
+export NLTK_DATA=`pwd`/nltk_data
+
+export FLASK_APP=Spotify/Spotify.py
+python -m flask run --host=localhost --port=8888

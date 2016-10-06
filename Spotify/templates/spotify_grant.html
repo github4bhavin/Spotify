@@ -1,0 +1,19 @@
+{% extends "default.html" %}
+{% block title %} OAuth Authorization from Spotify... {% endblock %}
+
+
+{% block content %}
+<div class="page-header">
+        <span>
+            <h1><small>requesting access form sporitfy account to create the playlist</small></h1>
+        </span>
+
+    <div id="authorization">
+        <h1>OAuth2 Autorization from Spotify!</h1>
+        <a href="{{ oauth_url }}">Please click here to authorize the request if you dont see any activity on this page within few seconds...</a>
+        <iframe src="{{ oauth_url }}" frameborder="0" scrolling="no" width="100%" height="100%">
+            <p> no iframes support</p>
+        </iframe>
+    </div>
+</div>
+{% endblock %}

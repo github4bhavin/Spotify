@@ -1,0 +1,34 @@
+
+###########
+#  README #
+###########
+
+# install virtualenv if you dont have one.. ( only if you want to keept everthing seperate)
+pip install virtualenv
+
+# chagne to root of the project
+cp ../Spotify
+
+# create virtual env for the project
+virtualenv venv
+
+# install all the required libraries
+pip install -r requirement.txt
+
+# activate virtualenv
+
+. venv/bin/activate
+
+#---------#
+# running #
+#---------#
+
+# once you have activated the virtualenv after installing all the required dependencies
+# will spin up at dev server.
+./run_spotify
+
+
+* Note:
+ - please note that the current code is not up to the production standars.
+ - I have made various attempts to come up with an appropriate grammers, but it still will need improvement
+ - the testcases here were intended to test various scenarios and so they do not assert any thing for now.
